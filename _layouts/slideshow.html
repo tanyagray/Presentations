@@ -58,7 +58,7 @@ title: Gather Workshops
 
 		<div class="inline-notes">
 			<!-- display notes here using js -->
-			<p>Reading this? The notes are broken! Try refreshing the page :)</p>
+			<p>Loading...</p>
 		</div>
 
 		<script src="{{ site.baseurl }}/submodules/revealjs/lib/js/head.min.js"></script>
@@ -101,7 +101,7 @@ title: Gather Workshops
 			Reveal.addEventListener( 'ready', function( event ) {
 			    $('.inline-notes').html(marked(event.currentSlide.textContent));
 			} );
-			
+
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 			    $('.inline-notes').html(marked(event.currentSlide.textContent));
 			} );
