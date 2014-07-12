@@ -1,0 +1,29 @@
+<section id="sidebar" class="col-md-3">
+
+	<!-- main navigation -->
+	<ul class="pages nav">
+
+		{% for section in site.data.navigation %}
+
+			{% assign linkclass = nil %}
+			{% assign currenturl = page.url | remove_first: '/' %}
+
+		    {% if section.url == currenturl %}
+
+		    	{% for link in section.subpages %}
+
+					<!-- page -->
+					<li>
+					    <a class="page" href="{{ site.baseurl }}/{{ link.url }}">
+					    	{{ link.title }}
+					    </a>
+					</li>
+
+				{% endfor %}
+			{% endif %}
+
+		{% endfor %}
+
+	</ul>
+
+</section>

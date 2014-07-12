@@ -1,0 +1,59 @@
+- title: Introduction
+  url: index.html
+
+
+- title: Presentation
+  url: presentation/overview.html
+  subpages:
+
+    - title: Web Foundations
+      url: presentation/#/webfoundations
+
+    - title: Page Structure
+      url: presentation/#/pagestructure
+
+    - title: HTML Basics
+      url: presentation/#/htmlbasics
+
+    - title: CSS Basics
+      url: presentation/#/cssbasics
+
+    - title: Site Builder
+      url: presentation/#/sitebuilder
+
+
+- title: Workbook
+  url: workbook/overview.html
+  subpages:
+
+    - title: Web Foundations
+      url: workbook/webfoundations.html
+
+    - title: Page Structure
+      url: workbook/pagestructure.html
+
+    - title: HTML Basics
+      url: workbook/htmlbasics.html
+
+    - title: CSS Basics
+      url: workbook/cssbasics.html
+
+    - title: Page Layouts
+      url: workbook/pagelayouts.html
+
+
+- title: Projects
+  url: projects/overview.html
+  subpages:
+
+    - title: Product Microsite
+      url: projects/product-microsite.html
+
+    - title: Conservation Awareness
+      url: projects/conservation.html
+
+    - title: Band Fansite
+      url: projects/fansite.html
+
+    - title: Charity Redesign
+      url: projects/charity.html

@@ -1,0 +1,20 @@
+---
+layout: slideshow
+title: Girl Geek Dinners - Gather Workshops
+---
+
+	{% for slide in site.data.ggd-gatherworkshops %}
+
+		<!-- slide -->
+		<section 
+			class="{{ slide.class }}" 
+			data-markdown="{{ site.baseurl }}/decks/ggd-gatherworkshops/slides/{{ slide.filename }}" 
+			data-notes="^Note:" 
+			
+			data-background="{{ site.baseurl }}/images/bg/blue_diamond_tile.png" 
+			data-background-size="153px" 
+			data-background-repeat="repeat"
+		>
+		</section>
+
+	{% endfor %}

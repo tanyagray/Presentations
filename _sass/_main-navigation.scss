@@ -1,0 +1,26 @@
+#mainNavigation {
+ 	background: #041221;
+ 	border: none;
+}
+
+#mainNavigation .nav a {
+
+	font-family: Lunchbox,"Helvetica Neue",Arial,sans-serif;
+	font-size: 1.6rem;
+	color: #dce2b1;
+	transition: all 0.2s ease 0s;
+}
+
+#mainNavigation .nav .active a {
+	color: #eead5e;
+	background: none;
+	border-bottom: 4px solid #eead5e;
+}
+
+#mainNavigation .nav a:hover{
+	transform: scale(1.2) translateZ(0px);
+}
+
+#mainNavigation .nav .active a:hover {
+	transform: none;
+}

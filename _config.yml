@@ -1,0 +1,6 @@
+name: Presentations
+baseurl: "/Presentations"
+markdown: redcarpet
+highlighter: true
+sass:
+  sass_dir: _sass
