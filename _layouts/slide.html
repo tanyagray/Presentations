@@ -1,0 +1,34 @@
+	<!-- slide -->
+	<section 
+		class="{{ page.class }}"
+		id="{{ page.title }}"
+
+		{% if page.background != nil %}
+			data-background="{{ site.baseurl }}/decks/what-i-wish-i-knew-then/images/{{ page.background }}" 
+			data-background-color="#b84f2d"
+			data-background-size="cover" 
+			data-background-repeat="none"
+		{% else %}
+			data-background="{{ site.baseurl }}/images/diamond-bg-tile.png" 
+			data-background-color="#b84f2d"
+			data-background-size="153px" 
+			data-background-repeat="repeat"
+		{% endif %}
+			
+			
+	>
+		
+		{{ page.content }}
+
+		<aside class="notes">
+		
+<!-- 
+notes have to be back here because 
+tabbing in causes them to otherwise 
+be interpreted as code in markdown 
+-->
+{{ page.notes }}
+
+		</aside>
+
+	</section>

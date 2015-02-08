@@ -1,6 +1,15 @@
 ---
-layout: default
-title: Building the Web - Gather Workshops
+layout: slideshow
+title: Presentation
 ---
+	
+	{% assign slideset = site.slides %}
+	{% for section in site.data.presentation %}
+		
+		{% include slideshowsection.html %}
 
-## All the slide deck thumbnails go here.
+	{% endfor %}
+
+
+
+

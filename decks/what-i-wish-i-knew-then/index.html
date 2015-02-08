@@ -1,0 +1,19 @@
+---
+layout: slideshow
+title: Presentation
+
+sectionname: what-i-wish-i-knew-then
+---
+	
+	{% assign slideset = site.slides %}
+	{% for section in site.data.what-i-wish-i-knew-then %}
+		
+		{% if section.sectionname == page.sectionname %}
+			{% include slideshowsection.html %}
+		{% endif %}
+
+	{% endfor %}
+
+
+
+

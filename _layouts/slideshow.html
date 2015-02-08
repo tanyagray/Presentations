@@ -1,5 +1,5 @@
 ---
-title: Gather Workshops
+
 ---
 
 <!doctype html>
@@ -19,8 +19,7 @@ title: Gather Workshops
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/submodules/revealjs/css/reveal.min.css">
-		<link rel="stylesheet" href="{{ site.baseurl }}/submodules/revealjs/css/theme/gather.css" id="theme">
-		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/submodules/revealjs/lib/css/zenburn.css">
@@ -57,56 +56,13 @@ title: Gather Workshops
 		</div>
 
 		<div class="inline-notes">
-			<!-- display notes here using js -->
-			<p>Loading...</p>
+			<div class="content">
+				<!-- display notes here using js -->
+				<p>Loading...</p>
+			</div>
 		</div>
 
-		<script src="{{ site.baseurl }}/submodules/revealjs/lib/js/head.min.js"></script>
-		<script src="{{ site.baseurl }}/submodules/revealjs/js/reveal.min.js"></script>
-
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				width: 1024,
-				height: 768,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: '{{ site.baseurl }}/submodules/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '{{ site.baseurl }}/submodules/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '{{ site.baseurl }}/submodules/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '{{ site.baseurl }}/submodules/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { 
-						hljs.configure({
-							tabReplace: '    ', 		// 4 spaces
-  							classPrefix: '',    		// don't append class prefix
-  							languages: ['xml', 'css']	// only handle html and css
-						});
-						hljs.initHighlightingOnLoad(); 
-					} },
-					{ src: '{{ site.baseurl }}/submodules/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: '{{ site.baseurl }}/submodules/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-			
-			Reveal.addEventListener( 'ready', function( event ) {
-			    $('.inline-notes').html(marked(event.currentSlide.textContent));
-			} );
-
-			Reveal.addEventListener( 'slidechanged', function( event ) {
-			    $('.inline-notes').html(marked(event.currentSlide.textContent));
-			} );
-
-		</script>
+		{% include revealjs-config.html %}
 
 	</body>
 </html>
